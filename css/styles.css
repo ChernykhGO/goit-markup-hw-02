@@ -4,19 +4,20 @@
   --title-text-color: #757575;
   --accent-color: #2196f3;
   --white-color: #ffffff;
-  --background-color: #e5e5e5;
   --background-team-color: #f5f4fa;
   --background-hero: #2f303a;
   --text-footer-color: rgba(255, 255, 255, 0.6);
 }
 body {
-  background: var(--background-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-.list {
+ul {
   list-style: none;
+}
+a {
+  text-decoration: none;
 }
 
 /* Site nav*/
@@ -28,11 +29,10 @@ body {
 }
 .logo {
   color: var(--logo-text-color);
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
 }
 .site-nav {
   font-weight: 500;
@@ -44,7 +44,6 @@ body {
 }
 .site-nav .link {
   color: var(--primary-text-color);
-  text-decoration: none;
 }
 .link:focus,
 .link:hover {
@@ -60,7 +59,6 @@ body {
 }
 .contact a {
   color: var(--title-text-color);
-  text-decoration: none;
 }
 .link-contact:focus,
 .link-contact:hover {
@@ -71,12 +69,14 @@ body {
 .hero {
   color: var(--white-color);
   background: var(--background-hero);
-  font-weight: 900;
-  font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.hero > h1 {
+  font-weight: 900;
+  font-size: 44px;
 }
 .button {
   color: var(--white-color);
@@ -104,7 +104,6 @@ body {
 /*About us*/
 .about-us .title,
 .team .title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -138,28 +137,33 @@ footer {
 }
 .adds .link-adds {
   color: var(--text-footer-color);
-  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 }
+.logo-footer {
+  color: var(--white-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
 
 /* Стили для Портфолио*/
-.btn.list {
+.button-port {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
 }
-.btn.list button:focus,
-.btn.list button:hover {
-  color: var(--white-color);
+.button-port:focus,
+.button-port:hover {
+  color: var(--background-team-color);
   background-color: var(--accent-color);
 }
 .list .caption {
   color: var(--primary-text-color);
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -169,7 +173,4 @@ footer {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;
-}
-.list .link-img {
-  text-decoration: none;
 }
